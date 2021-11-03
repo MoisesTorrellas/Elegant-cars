@@ -1,0 +1,54 @@
+/*-----------estilo nosotros-------------*/
+.group our-team{
+    
+}
+.group-title{
+    color: #0025CA;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.our-team{
+     text-align: center;
+    margin-bottom: 20px;
+}
+.our-team .conteiner--flex{
+    align-items: flex-start;
+    
+}
+.our-team-title{
+    color: #0025CA;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.our-team-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 30px; 
+}
+.our-team-txt{
+    margin: auto;
+    padding: 10px 50px;
+    background: #0025CA;
+    color: #fff;
+        
+}
+@media only screen and (min-width:700px){
+    .our-team-img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .conteiner---flex{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+    
+}

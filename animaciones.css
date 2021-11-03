@@ -1,0 +1,48 @@
+body{
+    background: #c9e;
+}
+
+.cuadrados{
+    padding: 30px;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background: #000;
+    margin: 20px;
+    position: relative;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 2s;
+}
+
+@keyframes animacion{
+    0% {background: red;
+        left: 0; }
+        
+    50%{
+          background: orange;  
+        }    
+    100%{
+        background: yellow;
+        left: 80%;
+    }
+
+}
+
+.cuadrados:first-child{
+    animation-timing-function: linear;
+}
+
+.cuadrados:nth-child(2){
+    animation-timing-function: ease;
+}
+.cuadrados:nth-child(3){
+    animation-timing-function:ease-in;
+}
+.cuadrados:nth-child(4){
+    animation-timing-function:ease-in-out;
+}
+
+.cuadrados:nth-child(5){
+    animation-timing-function:ease-out; }

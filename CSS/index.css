@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital@1&display=swap') ;
+ 
+
+
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Montserrat', fantasy;
+    margin: 0;
+    background: #bbb;
+}
+/*-----------estilo base-------------*/
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    
+}
+
+.conteiner{
+    width: 100%;
+    margin: auto;
+}
+
+.conteiner--flex{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column{
+    width: 100%;
+}
+
+/*-----------estilo header-------------*/
+
+.main-header{
+    width: 100%
+}
+
+.logo{
+    text-align: center;
+    font-size: 4.1em;
+    color: #1364FC  ;
+    padding: 15px;
+    font-weight: 1000;
+    position: relative;
+    margin-bottom: -210px;
+ 
+    
+}
+.img-logo{
+    margin-top: -50px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+   
+}
+
+.main-header-contacinfo-phone{
+    background: #0025CA ;
+    color: #fff;
+    margin: 0 auto;
+    padding: 4px 10px; 
+    text-align: right;
+}
+.main-header-contacinfo-address{
+    background: #0025CA ;
+    color: #fff;
+    margin: 0 auto;
+    padding: 4px 10px;
+    text-align: right;
+}
+.main-header [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+
+/*-----------estilo nav-------------*/
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+    background: rgba(0,0,0,.6);
+    
+    
+}
+.icon-bars{
+    position: relative;
+    display: inline;
+    color: #fff;
+    float: left;
+ 
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.social-icon [class*="icon-"]{
+    color: #000;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    height: 25px;
+    width: 25px;
+    background: #fff;
+    border-radius: 50%;
+}
+.social-icon--link{
+    text-decoration: none;
+}
+.menu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+    
+}
+.menu-link{
+    padding: 20px;
+    display: block;
+    color: #fff
+}
+.menu-link:hover{
+    background: #0025CA ;
+}
+
+.menu-link-select{
+    background:#0025CA ;
+}
+.mostrar{
+    margin-top: 0;
+    height: 237px;
+    width: 100%;
+}
+
+.menupc{
+    display: inline-block; 
+    padding: 10px 30px;
+    color: #fff;
+    margin: 0;
+    margin-left: 10px
+}
+.menu-selec{
+    background:#0025CA;
+    
+}
+.menupc:hover{
+    background: #0025CA;
+}
+ 
+
+
+
+
+/*-----------estilo banner-------------*/
+
+.banner{
+    margin-top: -45px;
+    position: relative;
+    
+}
+.banner:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+    margin: 0
+}
+.banner-img{
+    position:relative;
+    width: 100%;
+    height: 298px;
+    object-fit: cover;
+}
+.banner-content{
+    width: 90%;
+    color:#fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*-----------estilo primcipal-------------*/
+.group-color .conteiner{
+    background: #0025CA;
+    color: #fff;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    display: inline-block;
+    
+}
+.main-title{
+    margin: 10px 0;
+    font-size: 1.8em
+}
+.main-txt{
+    font-size: 1.1em;
+}
+.column--title{
+    font-size: 1.8em
+}
+.main-about-description .column:nth-child(2){
+    background: #0025CA;
+    color: #fff;
+    padding: 15px;
+    margin: 5px 0;
+    text-align: center;
+    
+}
+.column--txt{
+    font-size: 1.1em;
+}
+.btn{
+    background: #fff;
+    display: inline-block;
+    width: 100px;
+    color: #000;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: #0077CA;
+    color: #fff;
+    
+    
+}
+.conteiner-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+.featured-cars .conteiner{
+    width: 80%;
+    min-width: 700px;
+    justify-content: center;
+    padding: 10px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+   
+
+.group-title{
+    padding: 15px;
+    text-align: center;
+    background: #0025CA;
+    color: #fff;
+    font-size: 1.8em;
+    margin: 20px 40px;
+}
+.featured-cars-img{
+    margin: 5px 10px;
+    max-width: 300px;
+    border: 3px solid #0025CA;
+
+    
+}
+.featured-cars-title{
+    
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+/*-----------estilo footer-------------*/
+.main-footer{
+    width: 100%;
+    background: #444;
+    font-size: .5em;
+    color: #fff
+}
+.column--txt{
+    text-align: center;
+    padding: 0 30px;
+}
+.column--title{
+    text-align: center;
+}
+.column--32{
+    display: inline-block;
+    width: 33%;
+    font-size: 2em;
+    margin: auto;
+    color: #aaa;
+}
+.copy{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+}
+.footer-follow {
+    color: #aaa;
+    
+    
+}
+.footer-follow:hover{
+    color: #fff;
+}
+
+.column--33{
+    display: inline-block;
+    width: 33%;
+    font-size: 1.4em;
+}
+
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+
+/*-----------estilo responsive-------------*/
+@media only screen and (max-width:1000px){
+    .conteiner-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+
+    }
+    .featured-cars .conteiner{
+        width: 80%;
+        min-width: 400px;
+        margin: auto;
+        padding: 10px;
+        line-height: 30px;
+        margin-bottom: 40px; }
+    
+
+}
+@media only screen and (max-width:700px){
+  
+   .menupc{
+        display: none; }
+     .column--33{
+         width: 100%;
+    }
+    .column--32{
+        width: 100%;
+   }
+    
+    .main-nav{
+        position: sticky;
+        top: 0;
+       
+        background: rgba(0,0,0,.86)
+        
+    }
+    
+    
+
+}  
+@media only screen and (min-width:700px){
+  
+   .icon-bars{
+        display: none; }
+    .menu{
+        display: none;}
+    .column-60{
+        width: 49%;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        height: 100%;
+        }
+    .img-logo{
+        display: none;
+    }
+    .banner{
+        position: relative;
+        top: -84px;
+        z-index: -1000;
+        height: 215px;
+    }
+    .main-header-contacinfo-phone{
+    background: none ;
+        position: relative;
+        bottom: 0px
+}
+.main-header-contacinfo-address{
+    background: none ;
+    position: relative;
+    margin-bottom: 30px
+}
+    .logo{
+        position: relative;
+        color: #fff;
+        padding-top: 0;
+    }
+    .main-nav{
+        position: sticky;
+        top: 0;
+        background: rgba(0,0,0,.86);
+        padding: 0px; 
+        
+    }
+    .banner-content{
+        position: relative;
+        top: -90px;
+    }
+   
+
+}  
+@media only screen and (max-width:500px){
+  
+    .conteiner-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .featured-cars-img{
+        position: relative;
+        left: 30px;
+        
+        
+    }
+    
+
+     
+ 
+ } 

@@ -1,0 +1,71 @@
+.conteiner--grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+.group .conteiner{
+    margin-bottom: 0px;
+}
+.contact-information{
+    padding: 30px;
+    padding-top: 0;
+    border-right:2px solid #0025CA ;
+
+}
+.contact-information .column--title{
+    text-align: center;
+    font-size: 1.9em;
+}
+.contact-information .column--txt{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.contact-information [class*="icon-"] {
+    font-size: 1.4em;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.formulario{
+    padding: 10px;
+    padding-top: 0;
+
+}
+.formulario--label, .formulario--input-txt, .formulario--textarea{
+    display: block;
+    width: 100%;
+}
+.formulario--input-txt{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formulario--textarea{
+    max-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+
+}
+.btn{
+    cursor: pointer;
+    margin: 20px;
+}
+
+@media only screen and (max-width:700px){
+    .conteiner--grid{
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .contact-information{
+        border-right: none;
+        border-bottom:2px solid #0025CA ;
+    
+    }
+    .contact-information .column--title{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .contact-information .column--txt{
+        text-align: justify;
+        font-size: 1em;
+    }
+}
